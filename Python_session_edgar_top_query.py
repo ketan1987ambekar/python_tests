@@ -5,11 +5,12 @@ import zipfile
 ## url parameter
 url='http://www.sec.gov/dera/data/Public-EDGAR-log-file-data/2017/Qtrl/Log20170201.zip'
 
+## I couldnt download this file ##
 ## Download the file from the server
 
 file = requests.get(url)
 
-## load the zip file
+## load the zip file..i created sample file in my local machine and created below script
 df_zip = pd.read_csv('Log20170201.zip',compression='zip') ## we can not test it so i used sample file in same format.
 
 ##Sample file
